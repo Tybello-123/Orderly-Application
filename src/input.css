@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.outer-container{
+    background: url('/images/home-page.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.inner-container{
+    
+    background: url('/images/home-page.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.form-box{
+    backdrop-filter: blur(20px);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "orderly-application",
+  "version": "1.0.0",
+  "description": "A task management App",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tybello-123/Orderly-Application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tybello-123/Orderly-Application/issues"
+  },
+  "homepage": "https://github.com/Tybello-123/Orderly-Application#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
