@@ -4,18 +4,158 @@
 
 
 
+
+
+/* navigation animation */
+.navigation li a::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -5px;
+    width:100%;
+    height: 2px;
+    background: ghostwhite;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity:0;
+    transition:.5s;
+}
+
+.navigation li a:hover::after{
+    transform:translateY(0);
+    opacity:1;
+}
+
+/* outer background  */
 .outer-container{
     background: url('/images/home-page.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+  
+    height: 100vh;
+    filter:blur(5px);
     
 }
+
+
 .inner-container{
-    
-    background: url('/images/home-page.jpg') no-repeat;
+   
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /* width: 65%; */
+    /* height: 480px; */
+    /* border-radius: 10px; */
+    /* z-index:5; */
+    background: url('/images/inner-image.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    /* margin-top: 2em; */
+    
 }
-.form-box{
+
+/* add to remove dispaly of login box */
+/* .logreg-section{
+    overflow:hidden;
+} */
+
+.logreg-section .form-box{
+    position:absolute;
     backdrop-filter: blur(20px);
 }
+
+/* stating position of logreg box  */
+.logreg-section .form-box.login{
+  
+    transform: translateX(0);
+    transition:transform .6s ease;
+  /* speed after active class is removed */
+    transition-delay: .7s;
+}
+/* add the active class the the login section */
+.logreg-section.active .form-box.login{
+  
+    transform: translateX(800px);
+    transition-delay:0s;
+  
+}
+
+/* repat the same for the register */
+
+/* starting postion is 800px */
+.logreg-section .form-box.register{
+  
+    transform: translateX(800px);
+    transition: transform .6s ease;
+    /* the transiton after active class is removed */
+    transition-delay:0s;
+  
+}
+
+/* ending postion is 0pc */
+.logreg-section.active .form-box.register{
+  
+    transform: translateX(0);
+    transition-delay: .7s;
+}
+
+.input-control {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid white;
+    margin: 25px 0px;
+  }
+  
+  .input-control input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+  }
+  
+  .input-control label {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+   
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s ease;
+  }
+  
+  /* Use the "+" selector to select the label immediately after the input */
+  .input-control input:focus~label,
+  .input-control input:valid~label {
+    transform: translateY(0);
+    top: -5px;
+  }
+  
+  .input-control .icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 1rem;
+  }
+
+  input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+}
+
+
+input:-webkit-autofill{
+  -webkit-text-fill-color: white !important;
+}
+  

@@ -2,7 +2,15 @@
 module.exports = {
   content: ['./src/*.{html,js}'],
   theme: {
+    screens:{
+      sm: '550px',
+      md: '800px',
+      lg: '976px',
+      xl:'1440px'
+    },
     extend: {
+
+
       colors: {
         bleu: 'hsla(206, 100%, 48%, 1)',
         unitedBlue: 'hsla(211, 66%, 58%, 1)',

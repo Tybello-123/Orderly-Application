@@ -538,38 +538,28 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 550px) {
   .container {
-    max-width: 640px;
+    max-width: 550px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .container {
-    max-width: 768px;
+    max-width: 800px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 976px) {
   .container {
-    max-width: 1024px;
+    max-width: 976px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1280px;
+    max-width: 1440px;
   }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.fixed {
-  position: fixed;
 }
 
 .absolute {
@@ -580,17 +570,38 @@ video {
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
 
-.float-right {
-  float: right;
+.top-\[-100\%\] {
+  top: -100%;
+}
+
+.top-\[20\%\] {
+  top: 20%;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-4 {
@@ -601,20 +612,16 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .block {
   display: block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -625,28 +632,48 @@ video {
   display: none;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-8 {
   height: 2rem;
 }
 
-.max-h-screen {
-  max-height: 100vh;
+.h-96 {
+  height: 24rem;
 }
 
-.w-10 {
-  width: 2.5rem;
+.h-full {
+  height: 100%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-full {
   width: 100%;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-start {
@@ -673,10 +700,14 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
@@ -687,25 +718,17 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-r-xl {
-  border-top-right-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
-.border-ghostWhite {
-  border-color: hsla(222, 31%, 94%, 1);
+.rounded-r-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .bg-bleu {
   background-color: hsla(206, 100%, 48%, 1);
 }
 
-.bg-coffee {
-  background-color: hsla(22, 38%, 28%, 1);
+.bg-licorice {
+  background-color: hsla(352, 52%, 8%, 1);
 }
 
 .bg-transparent {
@@ -716,10 +739,6 @@ video {
   fill: currentColor;
 }
 
-.p-16 {
-  padding: 4rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -728,22 +747,19 @@ video {
   padding: 0.75rem;
 }
 
-.p-8 {
-  padding: 2rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .px-8 {
@@ -751,9 +767,9 @@ video {
   padding-right: 2rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 
 .py-6 {
@@ -761,8 +777,17 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pt-8 {
+.py-8 {
   padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .pt-6 {
@@ -782,14 +807,14 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -817,34 +842,175 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.brightness-50 {
-  --tw-brightness: brightness(.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+/* navigation animation */
+
+.navigation li a::after{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -5px;
+  width:100%;
+  height: 2px;
+  background: ghostwhite;
+  border-radius: 5px;
+  transform: translateY(10px);
+  opacity:0;
+  transition:.5s;
 }
+
+.navigation li a:hover::after{
+  transform:translateY(0);
+  opacity:1;
+}
+
+/* outer background  */
 
 .outer-container{
   background: url('/images/home-page.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  filter:blur(5px);
 }
 
 .inner-container{
-  background: url('/images/home-page.jpg') no-repeat;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  /* width: 65%; */
+  /* height: 480px; */
+  /* border-radius: 10px; */
+  /* z-index:5; */
+  background: url('/images/inner-image.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  /* margin-top: 2em; */
 }
 
-.form-box{
+/* add to remove dispaly of login box */
+
+/* .logreg-section{
+    overflow:hidden;
+} */
+
+.logreg-section .form-box{
+  position:absolute;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
 
-.hover\:text-gray-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+/* stating position of logreg box  */
+
+.logreg-section .form-box.login{
+  transform: translateX(0);
+  transition:transform .6s ease;
+  /* speed after active class is removed */
+  transition-delay: .7s;
 }
 
-@media (min-width: 768px) {
+/* add the active class the the login section */
+
+.logreg-section.active .form-box.login{
+  transform: translateX(800px);
+  transition-delay:0s;
+}
+
+/* repat the same for the register */
+
+/* starting postion is 800px */
+
+.logreg-section .form-box.register{
+  transform: translateX(800px);
+  transition: transform .6s ease;
+  /* the transiton after active class is removed */
+  transition-delay:0s;
+}
+
+/* ending postion is 0pc */
+
+.logreg-section.active .form-box.register{
+  transform: translateX(0);
+  transition-delay: .7s;
+}
+
+.input-control {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  border-bottom: 2px solid white;
+  margin: 25px 0px;
+}
+
+.input-control input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+
+.input-control label {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+/* Use the "+" selector to select the label immediately after the input */
+
+.input-control input:focus~label,
+  .input-control input:valid~label {
+  transform: translateY(0);
+  top: -5px;
+}
+
+.input-control .icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+
+.hover\:bg-licorice:hover {
+  background-color: hsla(352, 52%, 8%, 1);
+}
+
+.hover\:text-licorice:hover {
+  color: hsla(352, 52%, 8%, 1);
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 550px) {
+  .sm\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .md\:static {
+    position: static;
+  }
+
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -853,26 +1019,83 @@ video {
     display: flex;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-4\/5 {
+    height: 80%;
+  }
+
+  .md\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .md\:min-h-fit {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
+  .md\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .md\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .md\:w-8\/12 {
+    width: 66.666667%;
+  }
+
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:cursor-default {
+    cursor: default;
   }
 
   .md\:flex-row {
     flex-direction: row;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:justify-start {
     justify-content: flex-start;
   }
 
-  .md\:justify-center {
-    justify-content: center;
+  .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2rem * var(--tw-space-x-reverse));
-    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:px-24 {
@@ -880,19 +1103,43 @@ video {
     padding-right: 6rem;
   }
 
-  .md\:pb-8 {
-    padding-bottom: 2rem;
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .md\:pb-10 {
-    padding-bottom: 2.5rem;
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
   }
 
   .md\:text-start {
     text-align: start;
   }
 
-  .md\:align-bottom {
-    vertical-align: bottom;
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-licorice {
+    color: hsla(352, 52%, 8%, 1);
+  }
+
+  .md\:hover\:text-licorice:hover {
+    color: hsla(352, 52%, 8%, 1);
   }
 }
+  
